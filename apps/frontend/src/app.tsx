@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="w-screen h-screen flex items-center justify-center bg-gradient-to-r from-green-500 to-purple-500">
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );
 }
