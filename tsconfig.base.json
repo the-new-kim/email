@@ -8,6 +8,7 @@
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleDetection": "force",
+    "moduleResolution": "bundler",
 
     // strictness
     "strict": true,
@@ -17,7 +18,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@email/frontend/*": ["./apps/frontend/src/*"]
+    }
   },
   "exclude": ["node_modules", "dist"]
 }
